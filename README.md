@@ -8,4 +8,4 @@ usadas, versões e volumes de persistência.
 
 2 - var_amb.env: Define as variáveis de ambiente dos 2 contêineres, senhas, usuários etc.
 
-3 - dockerfile: Define os locales da imagem usada no Postgresql
+3 - dockerfile: Altera os locales da imagem usada no Postgresql
