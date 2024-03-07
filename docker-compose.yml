@@ -5,6 +5,7 @@
 # defino as versões mais recentes para cada um.
 
 # atenção nos redirecionamentos de portas e volumes de persistência.
+# atualizado para versão mais recente PgAdmin 8.4
 
 version: '3.8'
 
