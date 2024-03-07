@@ -137,6 +137,6 @@ sudo docker-compose up -d
 Pronto você voltou tudo para a configuração original.
 
 
-Lembrando eu adiciono o sudo ao inicio do programa pois não uso conta de administrador. Se você não usa sudo ou adicionou seu usuário ao grupo docker não precisa adicionar o sudo antes de cada comando. Mas leve em consideração a orientação abaixo:
+Lembrando eu adiciono o sudo ao inicio de cada comando pois não uso conta de administrador. Se você não usa sudo ou adicionou seu usuário ao grupo docker não precisa adicionar o sudo antes de cada comando. Mas leve em consideração a orientação abaixo:
 
 https://wiki.debian.org/Docker
