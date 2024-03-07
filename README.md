@@ -93,7 +93,7 @@ Padronização de ambiente: Evita aquela clássica situação de na minha máqui
 funciona na máquina do amigo.
 
 Independência do sistema: Eu já utilizei esses mesmos aquivos para criar um amiente numa maquina
-rodando Debian 12 e também num Chromebook ambos funcionaram sem problemas. Instalando o docker no windows
+rodando Debian 12 e também num ChromeOS ambos funcionaram sem problemas. Instalando o docker no windows
 você também poderá rodar sem grandes problemas usando os mesmos arquivos.
 
 Aprendizado de novas ferramentas: Durante esse processo você aprendeu alguma coisa sobre git
