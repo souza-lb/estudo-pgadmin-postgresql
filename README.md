@@ -130,7 +130,8 @@ Faça a clonagem do repositório mais uma vez
 
 Rode novamente
 
-sudo docker-compose build 
+sudo docker-compose build
+
 sudo docker-compose up -d
 
 Pronto você voltou tudo para a configuração original.
