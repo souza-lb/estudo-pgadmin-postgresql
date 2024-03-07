@@ -1,5 +1,5 @@
 # estudo-pgadmin-postgresql
-Ambiente básico para estudo PgAdmin4 v8.3  e PostgreSQL v16.2
+Ambiente básico para estudo PgAdmin4 v8.4  e PostgreSQL v16.2
 
 Basicamente há 4 arquivos:
 
@@ -140,3 +140,7 @@ Pronto você voltou tudo para a configuração original.
 Lembrando eu adiciono o sudo ao inicio de cada comando pois não uso conta de administrador. Se você não usa sudo ou adicionou seu usuário ao grupo docker não precisa adicionar o sudo antes de cada comando. Mas leve em consideração a orientação abaixo:
 
 https://wiki.debian.org/Docker
+
+Para minimizar o consumo de recursos quando fora de uso e evitar o reinicio automatico dos contêineres
+no reboot da máquina, o arquivo docker-compose.yml foi alterado para "restart: on-failure", se você acha conveniente
+os contêineres já carregarem após o reboot pode optar por manter a opção "restart: aways" como anteriormente.
