@@ -84,16 +84,17 @@ Uma pessoa que não tenha um conhecimento muito consolidado de docker, mesmo ass
 ter ao final um ambiente para estudo funcional.
 
 Usar o docker dá uma certo trabalho inicial que compensa. Muita gente vem do ambiente windows e
-não está muito familiarizado ao uso do terminal para tarefas (Acredite é bem mais rápido executar 
+não está muito familiarizado com o uso do terminal para tarefas (Acredite é bem mais rápido executar 
 algumas tarefas repetitivas pelo terminal.
 
 Você ao usar conteiner tem umas vantagens como:
+
 Padronização de ambiente: Evita aquela clássica situação de na minha máquina rodou mas não
 funciona na máquina do amigo.
 
-Independência do sistema: Eu já utilizei esses mesmos aquivos para criam um amiente numa maquina
+Independência do sistema: Eu já utilizei esses mesmos aquivos para criar um amiente numa maquina
 rodando Debian 12 e também num Chromebook ambos funcionaram sem problemas. Instalando o docker no windows
-você também poderar rodar usando os mesmos arquivos.
+você também poderá rodar sem grandes problemas usando os mesmos arquivos.
 
 Aprendizado de novas ferramentas: Durante esse processo você aprendeu alguma coisa sobre git
 docker. Mesmo que básico. Cabe a você buscar um complemento no uso do docker.
@@ -103,5 +104,6 @@ Lembre também ! se você já instalou o PsotgreSQL na sua maquina como serviço
 a porta ou no arquivo docker-compose.yaml redirecionar os serviços para outra porta livre.
 
 Sou apenas um estudante assim como você. Se você encontrou algo que pode ser melhorado nos arquivos 
-de configuração contribua também com um commit.
-git cl
+de configuração contribua também com um commit. Tenho certeza que isso vai deixar muitos colegas estudantes felizes.
+
+Espero que esse tempo dedicado aqui contribua para seus estudos.
