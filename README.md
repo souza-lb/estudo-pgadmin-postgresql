@@ -37,6 +37,14 @@ após finalizar rode para subir os contêineres:
 
 sudo docker-compose up
 
+Você também pode rodar o comando acima com o parâmetro -d como resultado seu terminal fica livre
+
+sudo docker-compose up -d
+
+Para interromper todos os contêineres rodando use:
+
+sudo docker stop $(sudo docker ps -aq)
+
 Não feche a janela do terminal apenas minimize. 
 Em seguida abra o navegador e acesse: localhost:80.
 Se você seguiu todos os passos até aqui você terá a tela de login do PgAdmin4 no seu navegador e seu banco rodando.
@@ -107,3 +115,27 @@ Sou apenas um estudante assim como você. Se você encontrou algo que pode ser m
 de configuração contribua também com um commit. Tenho certeza que isso vai deixar muitos colegas estudantes felizes.
 
 Espero que esse tempo dedicado aqui contribua para seus estudos.
+
+Fez besteira acha que alterou algo que não devia (Ainda dá pra corrigir!):
+
+Rode cada um dos comandos abaixo:
+
+sudo docker container prune ( apaga todos os contêineres)
+sudo docker volume prune ( apaga todos os volumes)
+sudo docker network prune ( apaga todas as redes virtuais)
+
+Apague a pasta que você rodou o git clone
+
+Faça a clonagem do repositório mais uma vez
+
+Rode novamente
+
+sudo docker-compose build 
+sudo docker-compose up -d
+
+Pronto você voltou tudo para a configuração original.
+
+
+Lembrando eu adiciono o sudo ao inicio do programa pois não uso conta de administrador. Se você não usa sudo ou adicionou seu usuário ao grupo docker não precisa adicionar o sudo antes de cada comando. Mas leve em consideração a orientação abaixo:
+
+https://wiki.debian.org/Docker
