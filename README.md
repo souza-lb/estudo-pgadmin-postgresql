@@ -1,5 +1,6 @@
-# estudo-pgadmin-postgresql
-Ambiente básico para estudo PgAdmin4 v8.4  e PostgreSQL v16.2
+<h1 align=center>Ambiente PostgreSQL PgAdmin</h1>
+
+<b>Ambiente básico para estudo PgAdmin4 v8.4  e PostgreSQL v16.2</b>
 
 Basicamente há 4 arquivos:
 
@@ -21,66 +22,80 @@ Para criar o ambiente você vai precisar basicamente de:
 Estou usando um Debian 12 nesse caso para instalar esses pacotes
 basta rodar:
 
-sudo apt install git docker.io docker-compose
+```bash
+$ sudo apt install git docker.io docker-compose
+```
 
 Com o git instalado basta clonar este repositório com:
 
+```bash
 git clone https://github.com/souza-lb/estudo-pgadmin-postgresql.git
+```
 
 Dentro da pasta do repositório que acabou de clonar execute:
 
+```bash
 sudo docker-compose build
+```
 
 Isso vai damorar um pouco na primera vez pois vai baixar as imagens para o repositório local.
 
 após finalizar rode para subir os contêineres:
 
-sudo docker-compose up
+```bash
+$ sudo docker-compose up
+```
 
 Você também pode rodar o comando acima com o parâmetro -d como resultado seu terminal fica livre
 
-sudo docker-compose up -d
+```bash
+$ sudo docker-compose up -d
+```
 
 Para interromper todos os contêineres rodando use:
 
-sudo docker stop $(sudo docker ps -aq)
+```bash
+$ sudo docker stop $(sudo docker ps -aq)
+```
 
 Não feche a janela do terminal apenas minimize. 
 Em seguida abra o navegador e acesse: localhost:80.
 Se você seguiu todos os passos até aqui você terá a tela de login do PgAdmin4 no seu navegador e seu banco rodando.
 
-Siga as imagens e configure o novo servidor no PgAdmin4
+Agora falta configurar os dados de login do PgAdmin
 
 Lembrando que para logar na tela inicial do pgadmin você usa os dados abaixo:
 
+``
 Username/Email Adress: admin@admin.com
 senha: postgres
+``
 
 Apos iniciar use a opção adicionar novo servidor e use os dados abaixo:
 
-Na aba General:
+<b>Na aba General:</b>
 
-nome: postgres
+``nome: postgres``
 
-Na aba Conexão:
+<b>Na aba Conexão:</b>
 
-host: postgresql-16.2
+``host: postgresql-16.2``
 
-port: 5432
+``port: 5432``
 
-maintenance database: postgres
+``maintenance database: postgres``
 
-username: postgres
+``username: postgres``
 
-senha: postgres
+``senha: postgres``
 
-Marque se quiser a opção salvar senha.
+<b>Marque se quiser a opção salvar senha.</b>
 
-Clique em salvar.
+<b>Clique em salvar.</b>
 
-Pronto se tudo deu certo você está com o PgAdmin4 e PostgreSQL rodando em contêineres
+<b>Pronto se tudo deu certo você está com o PgAdmin4 e PostgreSQL rodando em contêineres
 que você pode pausar com facilidade e não consumir recursos da sua maquina quando 
-não estão em uso.
+não estão em uso.</b>
 
 Para interromper os dois contêineres basta fechar a janela do terminal que você rodou
 o comando "sudo docker-compose up"
@@ -108,39 +123,57 @@ Aprendizado de novas ferramentas: Durante esse processo você aprendeu alguma co
 docker. Mesmo que básico. Cabe a você buscar um complemento no uso do docker.
 
 
-Lembre também ! se você já instalou o PsotgreSQL na sua maquina como serviço local você deve liberar 
+Lembre também ! se você já instalou o PostgreSQL na sua máquina como serviço local anteriormente você deve liberar 
 a porta ou no arquivo docker-compose.yaml redirecionar os serviços para outra porta livre.
-
-Sou apenas um estudante assim como você. Se você encontrou algo que pode ser melhorado nos arquivos 
-de configuração contribua também com um commit. Tenho certeza que isso vai deixar muitos colegas estudantes felizes.
 
 Espero que esse tempo dedicado aqui contribua para seus estudos.
 
-Fez besteira acha que alterou algo que não devia (Ainda dá pra corrigir!):
+<b>Fez besteira acha que alterou algo que não devia (Ainda dá pra corrigir!):</b>
 
-Rode cada um dos comandos abaixo:
+Rode cada um dos comandos abaixo no terminal:
 
-sudo docker container prune ( apaga todos os contêineres)
-sudo docker volume prune ( apaga todos os volumes)
-sudo docker network prune ( apaga todas as redes virtuais)
+```bash
+$ sudo docker container prune
+```
+<b>( apaga todos os contêineres)</b>
 
-Apague a pasta que você rodou o git clone
+```bash
+$ sudo docker volume prune
+```
+<b>( apaga todos os volumes)</b>
+
+```bash
+$ sudo docker network prune
+```
+<b>( apaga todas as redes virtuais)</b>
+
+
+<b>Apague a pasta que você rodou o git clone
+
 
 Faça a clonagem do repositório mais uma vez
 
-Rode novamente
+Rode novamente</b>
 
-sudo docker-compose build
+```bash
+$ sudo docker-compose build
+```
 
-sudo docker-compose up -d
+```bash
+$ sudo docker-compose up -d
+```
 
-Pronto você voltou tudo para a configuração original.
+<b>Pronto você voltou tudo para a configuração original.</b>
 
 
-Lembrando eu adiciono o sudo ao inicio de cada comando pois não uso conta de administrador. Se você não usa sudo ou adicionou seu usuário ao grupo docker não precisa adicionar o sudo antes de cada comando. Mas leve em consideração a orientação abaixo:
-
-https://wiki.debian.org/Docker
-
+Lembrando eu adiciono o sudo ao inicio de cada comando pois não uso conta de administrador. Se você não usa sudo ou adicionou seu usuário ao grupo docker não precisa adicionar o sudo antes de cada comando. Mas leve em consideração a orientação em: https://wiki.debian.org/Docker
 Para minimizar o consumo de recursos quando fora de uso e evitar o reinicio automatico dos contêineres
 no reboot da máquina, o arquivo docker-compose.yml foi alterado para "restart: on-failure", se você acha conveniente
 os contêineres já carregarem após o reboot pode optar por manter a opção "restart: aways" como anteriormente.
+
+
+Este tutorial foi elaborado por <b>Leonardo Bruno</b><p>
+Seu uso e reprodução é livre com a referência ao repositório original.<p>
+Encontrou algum erro? Quer sugerir alguma alteração?<p>
+<b>202301011744@alunos.estacio.br</b>
+
