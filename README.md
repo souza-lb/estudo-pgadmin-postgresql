@@ -173,7 +173,5 @@ os contêineres já carregarem após o reboot pode optar por manter a opção "r
 
 
 Este tutorial foi elaborado por <b>Leonardo Bruno</b><p>
-Seu uso e reprodução é livre com a referência ao repositório original.<p>
-Encontrou algum erro? Quer sugerir alguma alteração?<p>
-<b>202301011744@alunos.estacio.br</b>
+<b>souzalb@proton.me</b>
 
